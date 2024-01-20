@@ -33,7 +33,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [https://github.com/HarisMI40/challenge-frontend/tree/main/blog-preview-card-main](https://github.com/HarisMI40/challenge-frontend/tree/main/blog-preview-card-main)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [https://harismi40.github.io/challenge-frontend/blog-preview-card/](https://harismi40.github.io/challenge-frontend/blog-preview-card/)
 
 ## My process
 
