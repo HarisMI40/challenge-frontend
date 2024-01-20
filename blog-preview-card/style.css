@@ -1,0 +1,106 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Figtree&display=swap'); */
+
+@import url('https://fonts.google.com/specimen/Figtree');
+
+
+*{
+  margin : 0;
+}
+
+:root{
+  --color-primary : hsl(47, 88%, 63%);
+  --white : hsl(0, 0%, 100%);
+  --gray : hsl(0, 0%, 50%);
+  --black : hsl(0, 0%, 7%);
+
+  --font-size-paragraph : 16px;
+  --font-family : 'Figtree', sans-serif;;
+  --font-weight-semi-bold : 600;
+  --font-weight-bold : 800;
+}
+
+body{
+  font-family: var(--font-family);
+}
+
+.wrap{
+  height: 100vh;
+  background-color: var(--color-primary);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.card{
+  position: relative;
+  width: 400px;
+  /* height: 500px; */
+  border : 1px solid black;
+  margin-bottom : 10px;
+  border-radius : 18px;
+  background-color: var(--white);
+  padding : 10px;
+  cursor: pointer;
+  /* z-index: 5; */
+  box-shadow: 8px 10px 0px 0px rgba(0,0,0,1);
+  -webkit-box-shadow: 8px 10px 0px 0px rgba(0,0,0,1);
+  -moz-box-shadow: 8px 10px 0px 0px rgba(0,0,0,1);
+
+  transition: all 0.5s;
+}
+
+.card:hover {
+   box-shadow: 12px 10px 0px 0px rgba(0,0,0,1);
+  -webkit-box-shadow: 12px 10px 0px 0px rgba(0,0,0,1);
+  -moz-box-shadow: 12px 10px 0px 0px rgba(0,0,0,1);
+}
+
+
+.card .image img{
+  width : 100%;
+  border-radius: 10px;
+  margin-bottom : 10px;
+}
+
+.card .info{
+  margin-bottom : 15px
+}
+
+.card .info .category {
+  margin-bottom : 8px;
+  background-color: var(--color-primary);
+  display: inline-block;
+  padding : 5px;
+  border-radius : 5px;
+  font-weight: bolder;
+}
+
+
+
+.card .content h1{
+  margin-bottom : 10px;
+}
+.card .content h1:hover{
+  color : var(--color-primary)
+}
+
+.card .content p{
+  line-height: 26px;
+  font-size: var(--font-size-paragraph);
+}
+
+.card .user{
+  margin : 15px 0;
+  display: flex;
+  align-items: center;
+  gap : 15px;
+}
+
+.card .user img{
+  width: 30px;
+}
+
+.card .user div{
+  font-weight: var(--font-weight-bold);
+}
