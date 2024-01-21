@@ -82,8 +82,13 @@ body{
   gap : 5px;
   margin-bottom: 17px;
 }
+.card .card-main .footer .form-input .label{
+  display: flex;
+  justify-content: space-between;
+}
 
-.card .card-main .footer .form-input label{
+
+.card .card-main .footer .form-input .label label,span{
   color : var(--charcoal-grey);
   font-size : 12px;
   font-weight: bolder;
@@ -96,7 +101,26 @@ body{
   padding: 7px 17px
 }
 
-.card .card-main .footer button{
+.card .card-main .footer .form-input input:hover{
+  cursor: pointer;
+}
+
+/* Jika input Error */
+.card .card-main .footer .form-input.error .label .error_message{
+  color : red
+}
+
+.card .card-main .footer .form-input.error input{
+  background-color: rgba(255, 0, 0, 0.238);
+  border-color : rgba(255, 0, 0, 0.238);
+  color: rgba(255, 0, 0, 0.712);
+}
+
+/* .card .card-main .footer .form-input input.error::placeholder{
+  color: rgba(255, 0, 0, 0.712);
+} */
+
+.btn_submit{
   background-color: var(--dark-slate-grey);
   color : var(--white);
   border : 1px solid var(--charcoal-grey);
@@ -105,7 +129,46 @@ body{
   font-size: 15px;
   width: 100%;
   font-weight: 700;
+  transition: all 0.7s;
+  cursor: pointer;
 }
 
+.btn_submit:hover{
+  background-color: var(--color-primary);
+  border : 1px solid var(--color-primary);
+  
+
+  background: rgb(255,108,108);
+  background: linear-gradient(90deg, rgba(255,108,108,1) 36%, rgba(255,117,70,1) 43%, rgba(246,143,24,1) 72%);
+}
+
+
+.card-success{
+  width: 300px;
+  background-color: var(--white);
+  border-radius: 20px;
+  padding : 50px;
+  display: none;
+}
+
+.card-success img{
+  width: 50px;
+  margin-bottom : 20px
+}
+
+.card-success h1{
+  color: var(--dark-slate-grey);
+  font-family: var(--font-family);
+  font-size: 42px;
+  line-height: 40px;
+  margin : 0;
+}
+
+.card-success p{
+  color: var(--dark-slate-grey);
+  font-family: var(--font-family);
+  margin: 22px 0px;
+  font-size: 12px;
+}
 
 
