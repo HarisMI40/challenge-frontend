@@ -144,31 +144,30 @@ body{
 
 
 .card-success{
-  width: 300px;
   background-color: var(--white);
-  border-radius: 20px;
-  padding : 50px;
+  padding : 25px;
   display: none;
+  height: 100vh;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .card-success img{
-  width: 50px;
-  margin-bottom : 20px
+  width: 60px;
+  margin-bottom : 35px;
 }
-
 .card-success h1{
   color: var(--dark-slate-grey);
   font-family: var(--font-family);
   font-size: 42px;
   line-height: 40px;
-  margin : 0;
+  margin-bottom : 10px;
 }
 
 .card-success p{
-  color: var(--dark-slate-grey);
-  font-family: var(--font-family);
-  margin: 22px 0px;
-  font-size: 12px;
+  margin-bottom : 200px;
 }
 
-
+.card-success p .info-bold{
+  font-weight: 700;
+}

@@ -13,7 +13,7 @@ function submitForm(e){
   }
 
   card_subscribe.style.display = "none";
-  card_success.style.display = "block";
+  card_success.style.display = "flex";
 
 
 }
