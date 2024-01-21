@@ -1,0 +1,23 @@
+@media(min-width : 376px){ /*Desktop version*/
+  .wrap{
+    height: 100vh;
+  }
+  
+  .card{
+    width: 90%;
+    display: flex;
+    flex-direction: row-reverse;
+    padding : 20px;
+    border-radius: 15px;
+  }
+
+  .card .head{
+    background-image: url(./assets/images/illustration-sign-up-desktop.svg);
+    height: 516px;
+    flex : 1;
+  }
+
+  .card .card-main{
+    flex : 1
+  }
+}
