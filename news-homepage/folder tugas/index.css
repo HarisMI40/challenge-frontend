@@ -1,0 +1,283 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap');
+
+:root{
+  font-family: 'Inter', sans-serif;
+  --soft-orange: hsl(35, 77%, 62%);
+  --soft-red: hsl(5, 85%, 63%);
+  --off-white: hsl(36, 100%, 99%);
+  --grayish-blue: hsl(233, 8%, 79%);
+  --dark-grayish-blue: hsl(236, 13%, 42%);
+  --very-dark-blue: hsl(240, 100%, 5%);
+  --font-size-paragraph : 15px;
+
+}
+
+*{
+  margin : 0;
+}
+
+body{
+  width: 100%;
+  /* background-color: red; */
+  /* border : 1px solid black; */
+  overflow-x: hidden;
+  position: relative;
+}
+
+.container{
+  width: 80%;
+  margin:0 auto;
+}
+
+nav{
+  /* background-color: red; */
+  height: 50px;
+  width: 100%;
+  padding : 10px 0;
+  /* padding : 0 50px */
+}
+
+nav .container{
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* background-color: yellow; */
+  height: 100%;
+}
+
+.icon{
+  /* background-color: green; */
+  cursor: pointer;
+}
+
+.icon img, .collapse .menu img{ width: 40px;}
+
+
+.collapse .menu { cursor: pointer;}
+
+.modal {
+  background-color: black;
+  opacity: 0.5;
+  position:absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  height: 100vh;
+  z-index: 99;
+  display: none;
+}
+.sidebar {
+  background-color: white;
+  width: 250px;
+  height: 100vh;
+  position: absolute;
+  top : 0;
+  right :0;
+  padding: 10px 30px;
+  box-sizing: border-box;
+  transition: all 0.3s;
+  z-index: 100;
+}
+
+.sidebar-collapse {
+  right: -280px;
+}
+
+.sidebar .container-close-menu{
+  /* background-color: green; */
+  display: flex;
+  justify-content: end;
+}
+.sidebar #close_menu{
+  width : 25px;
+  /* padding : 10px; */
+  /* right: 0; */
+  margin-bottom: 20px;
+  cursor : pointer;
+}
+
+.sidebar ul {
+  list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 19px;
+}
+header{ 
+  /* padding : 0 20px; */
+  display: flex;
+  flex-direction: column;
+  gap:20px;
+
+}
+.hero{
+  box-sizing: border-box;
+ 
+}
+
+.hero img{
+  width: 100%;
+  aspect-ratio: 3/2;
+  object-fit: cover;
+}
+
+.hero .post-container{
+  display: flex;
+  flex-direction: column;
+}
+
+.hero h1{
+  font-size: 40px;
+  margin-top : 10px;
+}
+
+.hero p{
+  font-weight:400;
+  margin-top : 10px;
+  line-height: 25px;
+  color: var(--dark-grayish-blue);
+  font-size: var(--font-size-paragraph);
+}
+
+.hero .button-readmore{
+  padding : 10px 20px;
+  background-color: var(--soft-red);
+  color : white;
+  border : none;
+  margin-top : 20px;
+  font-size: 15px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-weight: 400;
+  transition: all 0.2s;
+}
+
+.hero .button-readmore:hover {
+  background-color: var(--very-dark-blue);
+  cursor: pointer;
+}
+
+aside {
+  /* margin-top: 40px; */
+  background-color: var(--very-dark-blue);
+  padding : 20px 20px;
+}
+
+aside h1{
+  color : var(--soft-orange);
+  box-sizing: border-box;
+  font-size: 30px;
+}
+
+aside .post-new{
+  color : white;
+  margin-top : 20px;
+  margin-bottom : 20px;
+}
+
+aside .post-new h2{
+  font-size: 22px;
+}
+
+aside .post-new p{
+  margin-top: 17px;
+  line-height: 25px;
+  /* font-weight: lighter; */
+}
+
+main{
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  gap : 30px
+}
+
+
+main .post{
+  display: flex;
+  gap: 20px;
+  /* background-color: yellow; */
+}
+
+.post .image-post{
+  flex: 1;
+}
+
+.post .image-post img{
+  width: 100px;
+  height: 100%;
+  object-fit: cover;
+}
+
+.post .content{
+  /* background-color: red; */
+  flex: 4;
+  display: flex;
+  flex-direction: column;
+  gap:5px
+}
+
+.content .order{
+  font-size: 35px;
+  color :var(--grayish-blue)
+}
+
+
+
+@media (min-width : 501px){
+  body{
+    /* background-color: red; */
+  }
+
+  header{
+    flex-direction: row;
+    gap : 40px;
+  }
+
+  header .hero{
+    flex : 2;
+  }
+
+  header .hero img{
+    aspect-ratio: 2/1;
+  }
+
+  header .hero h1{
+    /* color : orange; */
+    font-size: 55px;
+    font-weight: 800;
+  }
+
+  header aside {
+    flex: 1;
+  }
+
+  
+.hero .post-container{
+  flex-direction: row;
+  gap : 30px;
+}
+
+.hero .post-container h1{
+  flex: 1;
+}
+
+.hero .post-container div{
+  flex: 1;
+}
+
+.hero div p{
+  margin-top: 22px;
+}
+
+main{
+  flex-direction: row;
+  margin-top : 50px
+}
+
+  
+}
+
