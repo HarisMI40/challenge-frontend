@@ -1,0 +1,21 @@
+.container {
+  position: relative;
+  height: 300px;
+}
+
+.animated-text {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s, transform 0.5s;
+}
+
+.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+main{
+  height: 100vh;
+  width: 100%;
+  background-color: red;
+}

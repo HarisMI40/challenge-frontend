@@ -1,0 +1,59 @@
+html{
+  scroll-snap-type: y mandatory;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.section {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2em;
+  color: white;
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+
+  font-size: 100px;
+  box-sizing: border-box;
+  padding : 0 20px;
+
+  background-size: cover;
+}
+
+#section1 {
+  background-color: #3498db;
+  background-image: url("https://imageio.forbes.com/specials-images/imageserve/5d35eacaf1176b0008974b54/0x0.jpg?format=jpg&crop=4560,2565,x790,y784,safe&height=900&width=1600&fit=bounds");
+
+}
+
+#section2 {
+  background-color: #e74c3c;
+  background-image: url("https://assets-global.website-files.com/63d04d4b1b28345af4504ddc/643833d4a87446f67ecf20cf_Toyota_63d0517997cbdf9598476dde_Toyota.webp");
+}
+
+#section3 {
+  background-color: #2ecc71;
+  background-image: url("https://hips.hearstapps.com/hmg-prod/images/honda-prelude-concept-front-three-quarters-653927960f1f4.jpg?crop=1.00xw:0.920xh;0,0.0801xh&resize=980:*");
+}
+
+#section4 {
+  background-color: #f39c12;
+  background-image: url("https://media.cnn.com/api/v1/images/stellar/prod/231110014522-huawei-electric-vehicle.jpg?c=original");
+}
+
+.animated-text {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 3s, transform 0.5s;
+  transition-delay: 0.7s;
+  /* scroll-snap-align: start; */
+}
+
+.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
